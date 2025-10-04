@@ -151,6 +151,104 @@ for num in range(1, 101):
     if num % 3 == 0 or num % 5 == 0:
         continue  # Прерывание итерации и переход к следующей
     print(num)
+#Классная работа
 
+#1 задание
+
+n=list(range(1,21))
+print(n)
+#2
+numbers = [1, 2, 2, 7, 5, 8, 3, 2]
+summ = 0
+prod = 1
+for num in numbers:
+    summ += num
+    prod *= num
+print(summ)
+print(prod)
+#3
+n=[1,2,3,4,5,6,7,8,9]
+b=[]
+for num in n:
+    if num%2==0:
+        b.append(num)
+print(b)
+#4
+n=int(input('Введите число:'))
+for num in range(1,n+1):
+    if num%3==0:
+        print(num)
+#5
+n=[14,29,-11,47,6,111]
+b=sorted(n)
+print(b)
+print('минимальное число в списке:',b[0])
+print('максимальное число в списке:',b[-1])
+#6
+n=[-4,4,2,112,15,11,67,-16,15]
+b=[]
+for num in n:
+    if num not in b:
+        b.append(num)
+print(len(b))
+print(b)
+print(n)
+#7
+n=[-1,-2,-3,1,2,3]
+for i in range(len(n)):
+    if n[i]<0:
+        n[i]=0
+print(n)
+#8
+n=[4, 13, 96, 6, 3, 17, -8]
+min_index=0
+max_index=0
+for i, num in enumerate(n):
+    if num < n[min_index]:
+        min_index = i
+    if num > n[max_index]:
+        max_index = i
+
+n[min_index], n[max_index] = n[max_index], n[min_index]
+print(numbers)
+#9
+n=[5,12,7,3,-2,20,10]
+print(sorted(n))
+#10
+a=[1,2,3]
+b=[4,5,6]
+c=[]
+c.extend(a)
+c.extend(b)
+print(c)
+#11
+n=[20,10,44,51,67,9]
+for num in n:
+    if num >50:
+        print(num)
+#12       
+n=[2,3,5,8,4]
+m=[]
+for num in n:
+    b=num**2
+    m.append(b)
+print(m)
+#13
+n=[1,2,3,4,5,6]
+i=[]
+for num in n:
+    if num %2==0:
+        i.append(num+10)
+    else:
+        i.append(num)
+print(i)
+#14
+n=[3,7,2,5,10]
+sredny_nuumber=(3+7+2+5+10)/5
+for i in range(len(n)):
+    if n[i]<sredny_number:
+        n[i]=-1
+print(n)
+print(sredny_number)
 
 
